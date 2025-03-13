@@ -5,6 +5,7 @@ import nirraschiImg from '.././assets/fotocv.jpeg'
 import { Download, Puzzle, HeartHandshake, Github, Linkedin, Copyright } from 'lucide-react';
 import { motion } from "framer-motion";
 import experiences from '../assets/experiences';
+import './../index.css'
 
 
 const Landing = () => {
@@ -48,8 +49,8 @@ const Landing = () => {
                 {mensaje && <p className='text-xs m-3 text-emerald-500 font-semibold'>{mensaje}</p>}
             </header>
 
-            <div className='h-full w-full bg-color-claro-1 sm:rounded-b-[60px] rounded-b-[40px] z-10 relative pb-10'>
-                <div className=' flex flex-col justify-start items-center h-full w-full mt-16 relative'>
+            <div className='h-full w-full bg-color-claro-1 sm:rounded-b-[60px] rounded-b-[40px] z-10 relative pb-10 '>
+                <div className=' flex flex-col justify-start items-center h-full w-full mt-8 relative'>
                     <img src={nirraschiImg} alt='foto' className='
                     w-[125px] h-[125px] rounded-full mx-auto border-4 border-white
                     transform transition-transform duration-300 hover:scale-125' />
@@ -106,8 +107,9 @@ const Landing = () => {
                 </motion.div>
 
             </div>
+
             <div className=' bg-color-claro-1
-                            w-full h-[700px] overflow-hidden z-[index] mt-[-60px] pt-20
+                            w-full h-full md:h-[700px] overflow-hidden z-[index] mt-[-60px] pt-20
                             flex flex-col justify-start items-center gap-4'>
                 <div className='flex flex-col gap-4'>
 
@@ -125,31 +127,51 @@ const Landing = () => {
 
                 </div>
 
-                <div className="mt-8 md:flex-row flex flex-col gap-20 items-center justify-center text-center">
+                <div className="mt-8 flex flex-wrap gap-8 justify-center">
                     {experiences.map((exp) => (
-                        <div
-                            key={exp.id}
-                            className="relative w-40 h-28 group [perspective:1000px]"
-                        >
-                            <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ">
+                        <div key={exp.id} className="relative h-52 w-[200px] group cursor-pointer mx-8">
+                            {/* ORDEN CRUCIAL: Fondo -> Medio -> Frente */}
 
-                                {/* Cara frontal */}
-                                <div className="absolute w-[300px] h-full flex flex-col items-start justify-top mt-8  [backface-visibility:hidden]">
-                                    <p className="text-sm font-semibold text-color-oscuro">{exp.title}</p>
-                                    <p className='text-xs text-color-claro-2'>{exp.puesto}</p>
-                                    <p className='text-sm text-left whitespace-pre-line mt-4'>{exp.shortDescription}</p>
-                                </div>
+                            {/* Tarjeta Descripción (atrás) */}
+                            <div className="absolute flex justify-center items-center op-0 left-0 w-full h-full bg-white shadow-lg p-4 
+        transition-transform duration-500 ease-out 
+        transform rotate-3 
+        group-hover:translate-x-24 group-hover:rotate-0 group-hover:z-10 group-hover:scale-105 hover:!scale-110
+        hover:!rotate-0 hover:!z-50
+        z-20 opacity-75 hover:opacity-100">
+                                <p className="text-xs whitespace-pre-line">{exp.description3}</p>
+                                
+                            </div>
 
-                                {/* Cara trasera */}
-                                <div className="absolute md:w-[400px] h-fit flex  items-center justify-center bg-color-medio-2 text-white rounded-sm shadow-lg p-4 [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                                    <p className="text-xs whitespace-pre-line">{exp.description}</p>
-                                </div>
+                            {/* Tarjeta Puesto (medio) */}
+                            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-white shadow-lg p-4 
+        transition-transform duration-500 ease-out 
+        transform -rotate-3 
+        group-hover:-translate-x-24 group-hover:rotate-0 group-hover:z-20 group-hover:scale-105 hover:!scale-110
+        hover:!rotate-0 hover:!z-50
+        z-30 opacity-85 hover:opacity-100">
+                                <p className="text-xs">{exp.description2}</p>
+                            </div>
 
+                            {/* Tarjeta Título (frente) */}
+                            <div className="absolute top-0 left-0 w-full h-full bg-white shadow-lg p-4 
+        transition-transform duration-500 ease-out 
+        z-40 
+        group-hover:scale-105 
+        hover:!scale-110 hover:!z-50">
+                                <p className="text-sm font-semibold text-color-oscuro">{exp.title}</p>
+                                <p className='text-xs text-color-medio-2'>{exp.puesto}</p>
+                                <p className='text-xs text-color-oscuro mt-2'>{exp.description1}</p>
                             </div>
                         </div>
                     ))}
                 </div>
+                <div className='-mt-4 w-full flex justify-center'>
+                <a href="https://portfolio-nirvana.vercel.app/" target="_blank"
+                    className='mt-10 bg-color-oscuro rounded-2xl p-2 px-4 text-color-claro-1 text-xs 
+                    transform transition-all hover:scale-110'>Visita mi portafolio</a>
 
+                </div>
             </div>
 
 

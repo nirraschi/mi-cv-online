@@ -16,6 +16,10 @@ export default {
       borderRadius: {
         'large': '50px',
       },
+      rotate: {
+        '3': '3deg',
+        '-3': '-3deg'
+      }
 
     }
   },

@@ -4,17 +4,31 @@ const experiences = [
         {
             id: 1, title: "Censys S.A", 
             puesto: "QC - Testing",
-            description: "Trabajé con equipos técnicos y no técnicos para traducir normas financieras complejas a componentes funcionales, mejorando mi capacidad para comunicar requerimientos técnicos. Diseñé casos de prueba rigurosos que me enseñaron a priorizar la estabilidad del código y la detección temprana de errores en UI/UX. \n Adquirí visión estratégica al entender cómo el frontend impacta en operaciones críticas de entidades bancarias. Aprendí a mantener estándares de calidad bajo regulaciones cambiantes, fortaleciendo mi enfoque en código mantenible y documentación clara.", 
+            description1: "Participé en un equipo ágil con metodología Kanban, donde analicé problemas y diseñé casos de prueba efectivos para garantizar la calidad de los requerimientos.", 
+            description2:"Colaboré estrechamente con desarrolladores para garantizar que el producto cumpliera con los mas altos estándares de calidad. Adquirí visión estratégica sobre cómo el frontend impacta en operaciones críticas de entidades bancarias.",
+            description3:"Durante esta linda experiencia, adquirí conocimientos sobre procesos bancarios, normas financieras y términos contables, lo que me permitió comprender mejor el funcionamiento de las entidades bancarias y su integración con sistemas tecnológicos",
             shortDescription: " Colaboración cross-functional \n  Precisión Técnica \n  Contexto empresarial \n  Adaptabilidad. \n  Metodologías ágiles - Kanban"
         },
         {
-            id: 2, title: "Productos-AI", puesto: "Desarrolladora Frontend", description: " Implementé servicios de IA con TypeScript/JavaScript, aprendiendo a gestionar estados complejos y flujos asíncronos en interfaces dinámicas. Contribuí en sprints SCRUM donde perfeccioné mi capacidad para iterar diseños basados en feedback real. Usé React y TailwindCSS para crear componentes modulares y coherentes, optimizando la reutilización de código en proyectos a escala. ", shortDescription: " Arquitectura escalable \n  Metodologías ágiles - SCRUM \n   Sistemas de diseño"
+            id: 2, title: "Productos-AI", puesto: "Desarrolladora Frontend", 
+            description1: "Arquitectura escalable \n  Metodologías ágiles - SCRUM \n   Sistemas de diseño", 
+            description2:"Trabajé en un equipo SCRUM, en área de desarrollo frontend, creando componentes completos reutilizables, ayudando así a cumplir con el gran objetivo de sacar exitosamente la primera versión del producto.",
+            description3:"Integración de servicios de inteligencia artificial utilizando JavaScript y TypeScript.  Diseño Frontend utilizando TailwindCSS y CSS.",
+            shortDescription: " Arquitectura escalable \n  Metodologías ágiles - SCRUM \n   Sistemas de diseño"
         },
         {
-            id: 3, title: "Bootcamp Henry" ,puesto: "Desarrolladora FullStack", description: " Lideré el frontend de un e-commerce con React, aprendiendo a optimizar rendimiento (lazy loading, gestión de renders).  Pair programming constante que mejoró mi habilidad para escribir código legible y fácil de integrar. Validé decisiones técnicas con usuarios reales, priorizando accesibilidad y experiencia móvil-first. Experiencia completa de desarrollo de proyecto.", shortDescription: " Gestión técnica end-to-end.  \n  Trabajo en equipo \n  Impelentación nuevas tecnologías \n  Gestión de proyectos"
+            id: 3, title: "Bootcamp Henry" ,puesto: "Desarrolladora FullStack", 
+            description1: "Trabajé en equipo para desarrollar una aplicación e-commerce como proyecto final. Utilizamos tecnologías como Node.js, JavaScript, React y Tailwind CSS, aplicando metodologías ágiles en un entorno de equipo Scrum.", 
+            description2:"Esta experiencia fortaleció mis habilidades técnicas y mi capacidad para colaborar eficazmente en proyectos de desarrollo web.",
+            description3:"Fui seleccionada para formar parte del programa Henry Hero, preparando a nuevos alumnos Henry para rendir el examen de ingreso abarcando temas como Javascript Básico, Git, HTML-CSS, donde pulí mis habilidades blandas.",
+            shortDescription: "Gestión técnica end-to-end.  \n  Trabajo en equipo \n  Impelentación nuevas tecnologías \n  Gestión de proyectos"
         },
         {
-            id: 4, title: "Proyectos Personales", puesto: "Desarrolladora FullStack", description: "Desarrollo de Scripts con Puppeteer me enseñaron a identificar patrones repetitivos y crear soluciones de eficiencia. Proyectos como el Sistema de gestión de eventos con ingresos QR, con Next.js me entrenaron en adoptar nuevas tecnologías rápidamente. Mi app de retrospectivas en TypeScript refleja mi enfoque en clean code y testing preventivo", shortDescription: "Innovación técnica \n  Aprendizaje ágil  \n Calidad profesional"
+            id: 4, title: "Proyectos Freelance y Personales", puesto: "Desarrolladora FullStack", 
+            description1: "Creación de páginas web avanzadas con Wordpress de manera Freelance para la empresa de marketing española KARMA", 
+            description2:"Sistema de Acreditaciónes en Eventos Mediante QR: Desarrollada con Js, React, Next.js y MongoDB Atlas.",
+            description3:"Desarrollo de proyectos personales aplicando mis conocimientos de programación.",
+            shortDescription: "Innovación técnica \n  Aprendizaje ágil  \n Calidad profesional"
         },
     ]
 
